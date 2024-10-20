@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="StadiumController" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Seat group:"/>
+    <Text GridPane.rowIndex="0" GridPane.columnIndex="1" text="${controller.stadium.group.name}"/>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Capacity:"/>
+    <Text GridPane.rowIndex="1" GridPane.columnIndex="1" text="${controller.stadium.group.capacity}"/>
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="Price:"/>
+    <Text GridPane.rowIndex="2" GridPane.columnIndex="1" text="${controller.stadium.group.price}"/>
+    <Label GridPane.rowIndex="3" GridPane.columnIndex="0" text="Sold:"/>
+    <Text GridPane.rowIndex="3" GridPane.columnIndex="1" text="${controller.stadium.group.sold}"/>
+    <Label GridPane.rowIndex="4" GridPane.columnIndex="0" text="Left:"/>
+    <Text GridPane.rowIndex="4" GridPane.columnIndex="1" text="${controller.stadium.group.left}"/>
+    <Label GridPane.rowIndex="5" GridPane.columnIndex="0" text="Income:"/>
+    <Text GridPane.rowIndex="5" GridPane.columnIndex="1" text="${controller.stadium.group.income}"/>
+    <Label GridPane.rowIndex="6" GridPane.columnIndex="0" text="Sell:"/>
+    <TextField GridPane.rowIndex="6" GridPane.columnIndex="1" fx:id="sellTf"/>
+    <Button GridPane.rowIndex="7" GridPane.columnIndex="1" GridPane.halignment="RIGHT" onAction="#handleSell" text="Sell"/>
+</GridPane>
