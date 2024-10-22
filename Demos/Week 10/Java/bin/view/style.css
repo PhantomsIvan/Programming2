@@ -1,0 +1,13 @@
+.heading {
+	-fx-font-size: 50px;
+	-fx-fill: tomato;
+}
+
+Button {
+	-fx-background-color: blue;
+	-fx-text-fill: tomato;
+}
+	
+	
+
+
